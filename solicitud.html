@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de crédito</title>
+</head>
+<body>
+    <form action="datos_input.js" method="post">
+        <!--ENCABEZADO-->
+        <section>
+            <img src="/img/_9f85b434-b232-497b-b36b-c6ebedfb13b4.jfif" id="rae_logo" width="100">
+            <h3>CAJA DE AHORRO Y CRÉDITO SOLIDARIA <br>"RED DE ASISTENCIA ECONÓMICA"</h3>
+            <h2>SOLICITUD DE CRÉDITO</h2>
+            <label for="monto">Monto solicitado</label>
+            <input id="monto" name="monto" type="number">
+            <label for="plazo">Plazo (meses)</label>
+            <input id="plazo" name="plazo" type="number">
+        </section>
+
+        <!--DESTINO-->
+        <section>
+            <h3>DESTINO DEL CRÉDITO</h3>
+            <label for="agricultura">Agricultura</label>
+            <input id="agricultura" name="agricultura" type="checkbox">
+            <label for="vivienda">Vivienda</label>
+            <input id="vivienda" name="vivienda" type="checkbox">
+            <label for="deudas">Deudas</label>
+            <input id="deudas" name="deudas" type="checkbox">
+            <br>
+            <label for="comercio">Comercio</label>
+            <input id="comercio" name="comercio" type="checkbox">
+            <label for="educacion">Educación</label>
+            <input id="educacion" name="educacion" type="checkbox">
+            <label for="otros">Otros</label>
+            <input id="otros" name="otros" type="checkbox">
+        </section>
+
+        <!--DATOS DEUDOR-->
+        <section>
+            <h3>DATOS DEL DEUDOR</h3>
+            <label for="primer_apellido">Primer Apellido</label>
+            <input id="primer_apellido" name="primer_apellido" type="text"/>
+            <label for="segundo_apellido">Segundo Apellido</label>
+            <input id="segundo_apellido" name="segundo_apellido" type="text"/>
+            <label for="nombres">Nombre(s)</label>
+            <input id="nombres" name="nombres" type="text"/>
+            <br>
+
+            <label for="cedula">Cédula de ciudadanía</label>
+            <input id="cedula" name="cedula" type="number"/>
+
+            <labe>Sexo</labe>
+            <input id="M" name="genero" type="radio" value="M"> M
+            <input id="F" name="genero" type="radio" value="F"> F
+
+            <label for="estado_civil">Estado Civil</label>
+            <input id="casado" name="estado_civil" type="radio"> Casado
+            <input id="soltero" name="estado_civil" type="radio"> Soltero
+            <input id="viudo" name="estado_civil" type="radio"> Viudo
+            <input id="union_libre" name="estado_civil" type="radio"> Unión Libre
+            
+            <label for="cargas_familiares">Cargas familiares</label>
+            <input id="cargas_familiares" name="cargas_familiares" type="number" />
+            <br>
+
+            <button type="submit">
+                Enviar
+            </button>
+        </section>
+    </form>
+</body>
+</html>
