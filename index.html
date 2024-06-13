@@ -9,8 +9,8 @@
 <body>
     <div class="container">
         <h2>Inicio de Sesión</h2>
-        <form id="loginForm">
-            <div class="input-group">
+        <form id="loginForm" method="post">
+            <div class="input-group">   
                 <label for="username">Usuario</label>
                 <input type="text" id="username" name="username" required>
             </div>
@@ -18,9 +18,8 @@
                 <label for="password">Contraseña</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <button type="submit">Login</button>
         </form>
-        <p id="error-message"></p>
+        <button onclick="login()" type="button">Login</button>
     </div>
-    <script src="script_login.js"></script>
+    <script src="js/script_login.js"></script>
 </body>

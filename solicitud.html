@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <form action="datos_input.js" method="post" >
+    <form id="formulario_solicitud" method="post" >
         <!--ENCABEZADO-->
         <section style="display: flex; align-items: center; margin: 25px;">
-            <img src="/img/_9f85b434-b232-497b-b36b-c6ebedfb13b4.jfif" id="rae_logo" width="150">
+            <img src="/img/logo.png" id="rae_logo" width="150">
             <section style="text-align: center; margin-left: 20px;">
                 <h3>CAJA DE AHORRO Y CRÉDITO SOLIDARIA <br>"RED DE ASISTENCIA ECONÓMICA"</h3>
                 <h2>SOLICITUD DE CRÉDITO</h2>
@@ -25,21 +25,15 @@
         <section style="display: flex; flex-direction: column; align-items: center; margin: 25px">
             <h3>DESTINO DEL CRÉDITO</h3>
             <div>
-                <label for="agricultura">Agricultura</label>
-                <input id="agricultura" name="agricultura" type="checkbox">
-                <label for="vivienda">Vivienda</label>
-                <input id="vivienda" name="vivienda" type="checkbox">
-                <label for="deudas">Deudas</label>
-                <input id="deudas" name="deudas" type="checkbox">
+                <input id="agricultura" name="destino" type="radio" value="Agricultura"> Agricultura
+                <input id="vivienda" name="destino" type="radio" value="Vivienda"> Vivienda
+                <input id="deudas" name="destino" type="radio" value="Deudas"> Deudas
             </div>
             <br>
             <div>
-                <label for="comercio">Comercio</label>
-                <input id="comercio" name="comercio" type="checkbox">
-                <label for="educacion">Educación</label>
-                <input id="educacion" name="educacion" type="checkbox">
-                <label for="otros">Otros</label>
-                <input id="otros" name="otros" type="checkbox">
+                <input id="comercio" name="destino" type="radio" value="Comercio"> Comercio
+                <input id="educacion" name="destino" type="radio" value="Educación"> Educación
+                <input id="otros" name="destino" type="radio" value="Otros"> Otros
             </div>
         </section>
 
@@ -57,28 +51,173 @@
             <br>
 
             <div>
-                <label for="cedula">Cédula de ciudadanía</label>
-                <input id="cedula" name="cedula" type="number"/>
+                <label for="identificacion">Cédula de ciudadanía</label>
+                <input id="identificacion" name="identificacion" type="text"/>
 
                 <labe>Sexo</labe>
-                <input id="M" name="genero" type="radio" value="M"> M
-                <input id="F" name="genero" type="radio" value="F"> F
+                <input id="M" name="sexo" type="radio" value="M"> M
+                <input id="F" name="sexo" type="radio" value="F"> F
 
                 <label for="estado_civil">Estado Civil</label>
-                <input id="casado" name="estado_civil" type="radio"> Casado
-                <input id="soltero" name="estado_civil" type="radio"> Soltero
-                <input id="viudo" name="estado_civil" type="radio"> Viudo
-                <input id="union_libre" name="estado_civil" type="radio"> Unión Libre
+                <input id="casado" name="estado_civil" type="radio" value="Casado"> Casado
+                <input id="soltero" name="estado_civil" type="radio" value="Soltero"> Soltero
+                <input id="viudo" name="estado_civil" type="radio" value="Viudo"> Viudo
+                <input id="union_libre" name="estado_civil" type="radio" value="Unión Libre"> Unión Libre
             
                 <label for="cargas_familiares">Cargas familiares</label>
                 <input id="cargas_familiares" name="cargas_familiares" type="number" />
             </div>
             <br>
 
-            <button type="submit" style="width: 100px;">
-                Enviar
-            </button>
+            <div>
+                <label for="nombre_empresa">Empresa donde trabaja</label>
+                <input id="nombre_empresa" name="nombre_empresa" type="text"/>
+
+                <label for="direccion_empresa">Dirección de la empresa</label>
+                <input id="direccion_empresa" name="direccion_empresa" type="text"/>
+
+                <label for="cargo_empresa">Cargo</label>
+                <input id="cargo_empresa" name="cargo_empresa" type="text"/>
+
+                <label for="antiguedad_empresa">Antiguedad</label>
+                <input id="antiguedad_empresa" name="antiguedad_empresa" type="number"/>
+
+                <label for="telefono_trabajo">Telefono trabajo</label>
+                <input id="telefono_trabajo" name="telefono_trabajo" type="text"/>
+            </div>
+            <br>
+
+            <div>
+                <label for="nombre_conyuge">Nombre del conyuge o compañero/a</label>
+                <input id="nombre_conyuge" name="nombre_conyuge" type="text"/>
+
+                <label for="identificacion_conyuge">Cédula de ciudadania</label>
+                <input id="identificacion_conyuge" name="identificacion_conyuge" type="text"/>
+            </div>
+            <br>
+
+            <div>
+                <label for="direccion">Dirección o Residencia del deudor</label>
+                <input id="direccion" name="direccion" type="text"/>
+                
+                <label for="parroquia">Parroquia</label>
+                <input id="parroquia" name="parroquia" type="text"/>
+
+                <label for="sector">Sector</label>
+                <input id="sector" name="sector" type="text"/>
+            </div>
+            <br>
+
+            <div>
+                <h4>Vivienda</h4>
+                <input id="propia" name="vivienda" type="radio" value="Propia"> Propia
+                <input id="vivienda" name="vivienda" type="radio" value="Arrendada"> Arrendada
+                <input id="familiares" name="vivienda" type="radio" value="Familiares"> Familiares
+                <input id="otros" name="vivienda" type="radio" value="Otros"> Otros
+            </div>
+            <br>
+
+            <div>
+                <label for="telefono_fijo">Teléfono fijo</label>
+                <input id="telefono_fijo" name="telefono_fijo" type="text"/>
+
+                <label for="telefono_celular">Teléfono celular</label>
+                <input id="telefono_celular" name="telefono_celular" type="text"/>
+            </div>
+            <br>
+
+            <!--DATOS DEL GARANTE-->
+            <h3>DATOS DEL GARANTE</h3>
+
+            <div>
+                <label for="primer_apellido_garante">Primer Apellido</label>
+                <input id="primer_apellido_garante" name="primer_apellido_garante" type="text"/>
+                <label for="segundo_apellido_garante">Segundo Apellido</label>
+                <input id="segundo_apellido_garante" name="segundo_apellido_garante" type="text"/>
+                <label for="nombres_garante">Nombre(s)</label>
+                <input id="nombres_garante" name="nombres_garante" type="text"/>
+            </div>
+            <br>
+
+            <div>
+                <label for="identificacion_garante">Cédula de ciudadanía</label>
+                <input id="identificacion_garante" name="identificacion_garante" type="text"/>
+
+                <label>Sexo</label>
+                <input id="M" name="sexo_garante" type="radio" value="M"> M
+                <input id="F" name="sexo_garante" type="radio" value="F"> F
+
+                <label for="estado_civil_garante">Estado Civil</label>
+                <input id="casado_garante" name="estado_civil_garante" type="radio"> Casado
+                <input id="soltero_garante" name="estado_civil_garante" type="radio"> Soltero
+                <input id="viudo_garante" name="estado_civil_garante" type="radio"> Viudo
+                <input id="union_libre_garante" name="estado_civil_garante" type="radio"> Unión Libre
+            
+                <label for="cargas_familiares_garante">Cargas familiares</label>
+                <input id="cargas_familiares_garante" name="cargas_familiares_garante" type="number" />
+            </div>
+            <br>
+
+            <div>
+                <label for="nombre_empresa_garante">Empresa donde trabaja</label>
+                <input id="nombre_empresa_garante" name="nombre_empresa_garante" type="text"/>
+
+                <label for="direccion_empresa_garante">Dirección de la empresa</label>
+                <input id="direccion_empresa_garante" name="direccion_empresa_garante" type="text"/>
+
+                <label for="cargo_empresa_garante">Cargo</label>
+                <input id="cargo_empresa_garante" name="cargo_empresa_garante" type="text"/>
+
+                <label for="antiguedad_empresa_garante">Antiguedad</label>
+                <input id="antiguedad_empresa_garante" name="antiguedad_empresa_garante" type="number"/>
+
+                <label for="telefono_trabajo_garante">Telefono trabajo</label>
+                <input id="telefono_trabajo_garante" name="telefono_trabajo_garante" type="text"/>
+            </div>
+            <br>
+
+            <div>
+                <label for="nombre_conyuge_garante">Nombre del conyuge o compañero/a</label>
+                <input id="nombre_conyuge_garante" name="nombre_conyuge_garante" type="text"/>
+
+                <label for="identificacion_conyuge_garante">Cédula de ciudadania</label>
+                <input id="identificacion_conyuge_garante" name="identificacion_conyuge_garante" type="text"/>
+            </div>
+            <br>
+
+            <div>
+                <label for="direccion_garante">Dirección o Residencia del deudor</label>
+                <input id="direccion_garante" name="direccion_garante" type="text"/>
+                
+                <label for="parroquia_garante">Parroquia</label>
+                <input id="parroquia_garante" name="parroquia_garante" type="text"/>
+
+                <label for="sector_garante">Sector</label>
+                <input id="sector_garante" name="sector_garante" type="text"/>
+            </div>
+            <br>
+
+            <div>
+                <h4>Vivienda</h4>
+                <input id="propia_garante" name="vivienda_garante" type="radio"> Propia
+                <input id="vivienda_garante" name="vivienda_garante" type="radio"> Arrendada
+                <input id="familiares_garante" name="vivienda_garante" type="radio"> Familiares
+                <input id="otros_garante" name="vivienda_garante" type="radio"> Otros
+            </div>
+            <br>
+
+            <div>
+                <label for="telefono_fijo_garante">Teléfono fijo</label>
+                <input id="telefono_fijo_garante" name="telefono_fijo_garante" type="text"/>
+
+                <label for="telefono_celular_garante">Teléfono celular</label>
+                <input id="telefono_celular_garante" name="telefono_celular_garante" type="text"/>
+            </div>
         </section>
+        <button onclick="enviar_solicitud()" type="button" style="width: 100px;">
+            Enviar
+        </button>
     </form>
+    <script src="js/gestion_formularios.js"></script>
 </body>
 </html>

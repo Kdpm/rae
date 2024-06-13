@@ -50,3 +50,24 @@ button:hover {
     color: red;
     text-align: center;
 }
+
+form {
+    max-height: 100%; 
+    overflow-y: visible; 
+    width: 100%;
+    margin: 25px;
+    display: flex; /* Establece el formulario como un contenedor flexible */
+    flex-direction: column; /* Alinea los elementos internos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form * {
+    margin: 5px 5px; /* Márgenes entre los elementos */
+    width: auto; /* Ancho completo de los elementos */ /* Ancho máximo para evitar que los elementos se estiren demasiado */
+}
