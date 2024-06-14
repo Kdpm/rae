@@ -1,4 +1,4 @@
-const obtener_solicitudes_endpoint = "http://127.0.0.1:8000/admin/obtener_solicitudes"
+const obtener_solicitudes_endpoint = "http://18.217.147.28:8000/admin/obtener_solicitudes"
 
 
 window.onload = function(){

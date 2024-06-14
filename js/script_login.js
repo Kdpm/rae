@@ -1,5 +1,5 @@
-const login_endpoint = "http://127.0.0.1:8000/admin/login"
-const conexiones = "http://127.0.0.1:8000/admin/conexiones_activas"
+const login_endpoint = "http://18.217.147.28:8000/admin/login"
+const conexiones = "http://18.217.147.28:8000/admin/conexiones_activas"
 
 async function login(){
     try {

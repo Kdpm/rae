@@ -1,4 +1,4 @@
-const ingresar_solicitud_endpoint = "http://127.0.0.1:8000/admin/ingresar_solicitud"
+const ingresar_solicitud_endpoint = "http://18.217.147.28:8000/admin/ingresar_solicitud"
 
 function enviar_solicitud(){
     var formData = new FormData(document.getElementById("formulario_solicitud"));
